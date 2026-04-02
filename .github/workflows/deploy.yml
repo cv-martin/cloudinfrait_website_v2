@@ -54,13 +54,14 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and up-to-date
           # next.config.js/ts.
           #
           # You can list e.g. your repository name here to enable deployment to a subdirectory.
           static_site_generator: next
+          enablement: true
       - name: Restore cache
         uses: actions/cache@v4
         with:
