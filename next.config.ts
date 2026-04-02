@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
 
   // Addressing the Turbopack workspace root warning
   turbopack: {
-    root: path.resolve(__dirname, "./"),
+    root: path.resolve(process.cwd(), "./"),
   },
   // Ensure we can load the logo and future remote images
   images: {
