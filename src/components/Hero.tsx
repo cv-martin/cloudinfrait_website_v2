@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap, TrendingUp, Cpu } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import ParticleCanvas from "./ParticleCanvas";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Hero — The 2026 "Silicon Valley" First Impression.
@@ -168,7 +169,7 @@ export default function Hero() {
           <div className="absolute inset-0 ci-grid-bg-small opacity-[0.12] z-10 pointer-events-none" />
           
           <Image
-            src="/hero-green-infra.png"
+            src={getAssetPath("/hero-green-infra.png")}
             alt="CloudInfra Infrastructure Intelligence"
             fill
             className="object-cover opacity-90 group-hover:scale-[1.02] transition-transform duration-[3s]"

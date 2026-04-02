@@ -6,6 +6,7 @@ import {
   ArrowRight, CheckCircle2, ShieldCheck, Globe, Clock,
   Building2, User,
 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /*
   Our Process — /our-process
@@ -28,7 +29,7 @@ export default function OurProcessPage() {
         {/* Full bleed background image */}
         <div className="absolute inset-0">
           <img
-            src="/images/process-hero.jpg"
+            src={getAssetPath("/images/process-hero.jpg")}
             alt="CloudInfra IT recruiter reviewing candidate profiles"
             className="w-full h-full object-cover object-center brightness-[0.38]"
           />
@@ -232,7 +233,7 @@ export default function OurProcessPage() {
               className="relative w-full h-[480px] lg:h-[560px] rounded-2xl overflow-hidden mb-12 border border-white/8"
             >
               <img
-                src="/images/process-consultation.jpg"
+                src={getAssetPath("/images/process-consultation.jpg")}
                 alt="CloudInfra IT recruiter conducting in-depth candidate screening"
                 className="w-full h-full object-cover object-center brightness-[0.5]"
               />

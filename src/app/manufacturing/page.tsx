@@ -4,6 +4,7 @@ import { TransitionLink as Link } from "@/components/TransitionLink";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, ShieldCheck, Cpu, Settings, Wrench, BarChart3, Users, Monitor } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Manufacturing & Industrial Industry Page.
@@ -91,7 +92,7 @@ export default function ManufacturingPage() {
               className="hidden lg:block relative h-[450px] rounded-3xl overflow-hidden border border-white/5"
             >
               <Image
-                src="/hero-green-infra.png"
+                src={getAssetPath("/hero-green-infra.png")}
                 alt="Modern manufacturing and industrial automation"
                 fill
                 className="object-cover grayscale brightness-50 contrast-125 hover:grayscale-0 transition-all duration-1000"
@@ -201,7 +202,7 @@ export default function ManufacturingPage() {
               >
                  <div className="relative h-80 rounded-[2.5rem] overflow-hidden group shadow-2xl">
                     <Image
-                      src="/img-team-office.png"
+                      src={getAssetPath("/img-team-office.png")}
                       alt="Industrial recruitment team collaborating on a plant-floor placement"
                       fill
                       className="object-cover grayscale brightness-50 contrast-125"

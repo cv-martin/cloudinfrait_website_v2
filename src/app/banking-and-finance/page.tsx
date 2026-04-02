@@ -4,6 +4,7 @@ import { TransitionLink as Link } from "@/components/TransitionLink";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, TrendingUp, BarChart3, Building, Globe, Users, Lock, CheckCircle2 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Banking & Finance Industry Page.
@@ -91,7 +92,7 @@ export default function BankingFinancePage() {
               className="hidden lg:block relative h-[450px] rounded-3xl overflow-hidden border border-white/5"
             >
               <Image
-                src="/hero-servers.png"
+                src={getAssetPath("/hero-servers.png")}
                 alt="Financial services and fintech infrastructure"
                 fill
                 className="object-cover grayscale brightness-50 contrast-125 hover:grayscale-0 transition-all duration-1000"
@@ -201,7 +202,7 @@ export default function BankingFinancePage() {
               >
                  <div className="relative h-80 rounded-[2.5rem] overflow-hidden group shadow-2xl">
                     <Image
-                      src="/img-team-office.png"
+                      src={getAssetPath("/img-team-office.png")}
                       alt="Financial recruitment team collaborating on a risk placement"
                       fill
                       className="object-cover grayscale brightness-50 contrast-125"

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * AudiencePaths — Route candidate vs employer to their correct path.
@@ -137,7 +138,7 @@ export default function AudiencePaths() {
             {/* Subtle image overlay */}
             <div className="absolute inset-0 grayscale opacity-[0.06] group-hover:opacity-[0.1] transition-opacity duration-700 rounded-[1.5rem] overflow-hidden">
               <Image
-                src="/img-team-office.png"
+                src={getAssetPath("/img-team-office.png")}
                 alt=""
                 fill
                 className="object-cover"

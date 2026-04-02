@@ -4,6 +4,7 @@ import { TransitionLink as Link } from "@/components/TransitionLink";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Specialties — IT and Healthcare with photo headers.
@@ -64,7 +65,7 @@ export default function Specialties() {
             {/* Photo header */}
             <div className="relative h-56 w-full overflow-hidden">
               <Image
-                src="/img-it-professional.png"
+                src={getAssetPath("/img-it-professional.png")}
                 alt="Information Technology infrastructure visualization"
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
@@ -123,7 +124,7 @@ export default function Specialties() {
             {/* Photo header */}
             <div className="relative h-56 w-full overflow-hidden">
               <Image
-                src="/img-healthcare-professional.png"
+                src={getAssetPath("/img-healthcare-professional.png")}
                 alt="Healthcare professional in hospital setting"
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"

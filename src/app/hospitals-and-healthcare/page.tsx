@@ -7,6 +7,7 @@ import DomainValidation from "@/components/domain/DomainValidation";
 import { 
   Stethoscope, Heart, Activity, ClipboardList, Monitor, Users 
 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Hospitals & Healthcare — Domain depth page.
@@ -85,7 +86,7 @@ export default function HospitalsHealthcarePage() {
         title="Clinical &"
         subtitleAccent="Healthcare Ops."
         description="Credentialed clinician recruiters placing senior Physicians, Nurses, Allied Health, and EHR specialists across the United States. We operate with a primary focus on patient-safety and clinical compliance."
-        imageSrc="/img-healthcare-expert-node.png"
+        imageSrc={getAssetPath("/img-healthcare-expert-node.png")}
         imageAlt="Senior Healthcare Professional in a modern clinical tech environment"
         trustLabel="Compliance Protocol Level"
         trustTags={["Joint Commission", "HIPAA Aware", "USCIS Verified", "BLS/ACLS/NRP", "Board Certified"]}
@@ -115,7 +116,7 @@ export default function HospitalsHealthcarePage() {
         title="Credentialing is not Optional. It is Essential."
         description="In healthcare staffing, the wrong hire is a patient-safety risk. CloudInfra IT applies a Zero-Tolerance policy for credentialing — verifying licenses and background data before any candidate meets your unit Leads."
         points={clinicalPoints}
-        imageSrc="/img-team-office.png"
+        imageSrc={getAssetPath("/img-team-office.png")}
         imageAlt="Clinical recruitment team collaborating on a hospital placement"
         cardTitle="The Clinical Trust Framework"
       />

@@ -4,6 +4,7 @@ import { TransitionLink as Link } from "@/components/TransitionLink";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * DomainPreview — Primary domain snapshot for IT and Healthcare.
@@ -67,7 +68,7 @@ export default function DomainPreview() {
           >
             <div className="relative h-60">
               <Image
-                src="/img-it-professional.png"
+                src={getAssetPath("/img-it-professional.png")}
                 alt="IT professional at work"
                 fill
                 className="object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-75 transition-all duration-1000"
@@ -109,7 +110,7 @@ export default function DomainPreview() {
           >
             <div className="relative h-60">
               <Image
-                src="/img-healthcare-professional.png"
+                src={getAssetPath("/img-healthcare-professional.png")}
                 alt="Healthcare professional"
                 fill
                 className="object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-75 transition-all duration-1000"

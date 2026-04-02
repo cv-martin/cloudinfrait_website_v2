@@ -7,6 +7,7 @@ import {
   RefreshCw, Star, Zap, Users, Shield,
   CheckCircle2,
 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /* ─────────────────────────────────────────────────────────────
    Services page  /services
@@ -178,7 +179,7 @@ export default function ServicesPage() {
                           className="absolute inset-0 h-full w-full"
                         >
                           <img 
-                            src={m.image} 
+                            src={getAssetPath(m.image)} 
                             alt={m.label}
                             className="h-full w-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                           />

@@ -7,6 +7,7 @@ import DomainValidation from "@/components/domain/DomainValidation";
 import { 
   Cloud, Code2, Lock, Database, Cpu, Layers 
 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Information Technology — Domain depth page.
@@ -61,7 +62,7 @@ export default function InformationTechnologyPage() {
         title="Information"
         subtitleAccent="Technology Ops."
         description="Domain-specialist IT recruiters placing senior Cloud, DevOps, Security, Data, and Software Engineering professionals across the United States. We operate at the intersection of engineering depth and talent acquisition."
-        imageSrc="/img-it-expert-node.png"
+        imageSrc={getAssetPath("/img-it-expert-node.png")}
         imageAlt="Senior IT Professional specializing in cloud infrastructure and security"
         trustLabel="Compliance Clearance Level"
         trustTags={["H-1B", "OPT", "STEM OPT", "Green Card", "LPR", "US Citizen"]}
@@ -91,7 +92,7 @@ export default function InformationTechnologyPage() {
         title="Engineers who Recruit. Not the other way around."
         description="CloudInfra IT recruiters have worked directly within engineering delivery teams. We differentiate between keyword-stuffed CVs and actual architectural mastery — ensuring we never send the wrong fit."
         points={whyPoints}
-        imageSrc="/img-team-office.png"
+        imageSrc={getAssetPath("/img-team-office.png")}
         imageAlt="Technical recruitment team collaborating on a cloud placement"
         cardTitle="The CloudInfra IT Advantage"
       />

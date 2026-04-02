@@ -4,6 +4,7 @@ import { TransitionLink as Link } from "@/components/TransitionLink";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Cpu, Layers, Settings, BarChart3, Monitor, Users, CheckCircle2 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Aerospace Industry Page.
@@ -91,7 +92,7 @@ export default function AerospacePage() {
               className="hidden lg:block relative h-[450px] rounded-3xl overflow-hidden border border-white/5"
             >
               <Image
-                src="/hero-green-infra.png"
+                src={getAssetPath("/hero-green-infra.png")}
                 alt="Modern aerospace engineering and aviation systems"
                 fill
                 className="object-cover grayscale brightness-50 contrast-125 hover:grayscale-0 transition-all duration-1000"
@@ -201,7 +202,7 @@ export default function AerospacePage() {
               >
                  <div className="relative h-80 rounded-[2.5rem] overflow-hidden group shadow-2xl">
                     <Image
-                      src="/img-team-office.png"
+                      src={getAssetPath("/img-team-office.png")}
                       alt="Aerospace recruitment team collaborating on a mission-critical placement"
                       fill
                       className="object-cover grayscale brightness-50 contrast-125"

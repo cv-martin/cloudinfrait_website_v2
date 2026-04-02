@@ -7,6 +7,7 @@ import DomainValidation from "@/components/domain/DomainValidation";
 import { 
   Cpu, Code2, Wrench, Layers, Monitor, Users 
 } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 /**
  * Engineering Industry Page.
@@ -61,7 +62,7 @@ export default function EngineeringPage() {
         title="Engineering"
         subtitleAccent="Industrial Ops."
         description="Domain-specialist recruiters placing senior Mechanical, Electrical, Structural, Process, and Systems Engineers across the United States. We source for specialized industrial mandates."
-        imageSrc="/hero-green-infra.png"
+        imageSrc={getAssetPath("/hero-green-infra.png")}
         imageAlt="Modern engineering and industrial infrastructure systems"
         trustLabel="Credential Clearance Level"
         trustTags={["PE Licensed", "PMP Certified", "CWI Welding", "H-1B/TN Visa", "SC Eligible"]}
@@ -91,7 +92,7 @@ export default function EngineeringPage() {
         title="Engineers who Recruit. Not just keyword matching."
         description="CloudInfra IT recruiters speak the language of engineering. We understand structural integrity, process safety, and the nuances of the USA regulatory framework."
         points={whyPoints}
-        imageSrc="/img-team-office.png"
+        imageSrc={getAssetPath("/img-team-office.png")}
         imageAlt="Engineering recruitment team collaborating on an industrial placement"
         cardTitle="The CloudInfra IT Advantage"
       />
